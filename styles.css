@@ -48,8 +48,7 @@ button {
 }
 
 .operator,
-.posOrNeg,
-.decimal {
+.posOrNeg {
     background-color: rgb(253, 253, 198);
 }
 
