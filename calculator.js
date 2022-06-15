@@ -94,7 +94,7 @@ function calculate() {
         }
 
         if (num1Defined === true && operatorDefined === true && factorialApply === true) { // factorial triggers only when factorialApply is true
-          let result = factorial(num1); 
+          let result = +factorial(num1).toFixed(6); 
           display.textContent = result;
           num1 = result;
           operatorDefined = false; 
@@ -114,7 +114,7 @@ function calculate() {
           console.log(num1);
           }
           else if (num1Defined === true && num2Defined === true && operatorDefined === false) { // the case in which user clicks on an operator to trigger operate
-            let result = operate(operator, num1, num2); 
+            let result = +operate(operator, num1, num2).toFixed(6); 
             display.textContent = result; 
             console.log(result); 
             num1 = result; 
